@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">SmartWList</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_instansi">Instansi</string>
+    <string name="menu_bantuan">Bantuan</string>
+    <string name="menu_riwayat">Riwayat</string>
+    <string name="menu_keluar">Keluar</string>
+    <string name="search_home">Cari Antrianmu</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

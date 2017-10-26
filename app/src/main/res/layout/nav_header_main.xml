@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@color/drawer_back"
+    android:layout_height="@dimen/nav_header_height"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/profile_margin"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="@dimen/im_user_size"
+        android:layout_height="@dimen/im_user_size"
+        android:layout_centerHorizontal="true"
+        android:innerRadius="0dp"
+        android:shape="ring"
+        android:thicknessRatio="2"
+        app:cardBackgroundColor="@color/nav_back"
+        app:cardCornerRadius="@dimen/im_user_radius">
+
+        <ImageView
+            android:id="@+id/user_photo_drawer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/user_photo"></ImageView>
+
+        <LinearLayout
+            android:id="@+id/to_edit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:background="@color/red_trans"
+            android:orientation="vertical"
+            android:paddingBottom="@dimen/small_margin"
+            android:paddingTop="@dimen/small_margin">
+
+            <ImageView
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:layout_gravity="center"
+                android:src="@drawable/edit_profil" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_vertical_margin"
+    tools:context="igs.smartwlist.Login">
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="@dimen/nav_header_height"
+        android:layout_height="@dimen/nav_header_height"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/logo_login" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/logo"
+        android:layout_marginTop="@dimen/big_margin"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_vertical_margin">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/small_margin"
+            android:hint="Username"
+            android:paddingLeft="@dimen/small_margin"
+            android:paddingRight="@dimen/small_margin" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:paddingLeft="@dimen/small_margin"
+            android:paddingRight="@dimen/small_margin" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/big_margin"
+            android:layout_marginRight="@dimen/big_margin"
+            android:background="@drawable/shape_blue"
+            android:gravity="center"
+            android:onClick="toMain"
+            android:padding="@dimen/activity_vertical_margin"
+            android:text="MASUK"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_jumbo"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:onClick="toRegister"
+            android:orientation="horizontal"
+            android:padding="@dimen/small_margin">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tidak punya akun? "
+                android:textSize="@dimen/text_size" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DAFTAR"
+                android:textSize="@dimen/text_size" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
